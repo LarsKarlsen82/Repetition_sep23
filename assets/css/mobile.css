@@ -1,0 +1,365 @@
+/* Mobile sizes */
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 799px) { 
+
+body{
+    background-image: url(/assets/images/me.jpg);
+    background-repeat: no-repeat;
+    background-position: top ;
+    background-attachment: scroll;
+    background-size: 82px;
+    border-radius: 45% 45%;
+}
+/* NAV MENU */
+
+.topnav {
+    position: sticky;
+    overflow: hidden;
+    background-color: grey;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: lightgoldenrodyellow;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.active {
+    background-color: transparent;
+    color: grey;
+}
+
+
+/* TEST */
+#goalwrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap:5px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+   
+
+}
+/* #goalwrapper {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+#goalwrapper img {
+    width: 100%;
+    cursor: pointer;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.modal-content {
+    width: 40%;
+    margin: 5% 25%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+}
+
+
+.close {
+    float: right;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+/* Portfolio Gallery Grid */
+.brandswrap {
+    display:grid;
+    grid-template-columns: auto;
+}
+.brandswrap img {
+    width:100%;
+}
+.Port{
+    background-color: white;
+    border-radius: 1em;
+    height: 4em;
+    padding: 5px;
+}
+
+/* ABOUTWRAP */
+.aboutwrap {
+    display:grid;
+    grid-template-columns: auto;
+}
+.aboutwrap img {
+    width:100%;
+}
+
+/* Content */
+.done{
+    padding: 0;
+    margin: 0;
+    }
+.done p{
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 5px;
+    }
+.column {
+    column-count: 1;
+    background-color: white;
+    width: 100%;
+  }
+  .done img{
+    padding: 10px;
+    background-color: white;
+  }
+
+/*************************
+***    ABOUT SECTION   ***
+*************************/
+
+#about .aboutwrap {
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap:15px;
+}
+
+#about figure {
+    position: relative;
+    width:94%;
+    margin: 10px;
+
+}
+
+#about figure img {
+    width:100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#about figcaption {
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 99%;
+    background-color: #704c36c0;
+    border-radius: 5px;
+}
+
+#about figure h3 {
+    font-size:1em;
+    font-weight:400;
+    color:#c2c764;
+    margin: 5px;
+}
+
+#about figure p {
+    font-size:1em;
+    color:#fff;
+    margin: 5px;
+}
+
+/* Hvad kan jeg lide at lave? */
+
+#indhold{
+    display: block !important;
+    height: 250vh !important;
+    width: 100% !important;
+   
+}
+
+
+#indhold figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    height: 50%;
+    width: 50%;
+}
+#indhold figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.main img{
+    width: 100% !important;
+
+}
+.section img{
+    width: 100% !important;
+    height: 300px !important;
+}
+.aside img{
+    width: 100% !important;
+    height: 300px !important;
+
+}
+.nav img{
+    width: 100% !important;
+    height: 300px !important;
+
+}
+#fig1 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    height: 50px;
+    top: 165px;
+    text-align: center;
+    padding-bottom: 10px;
+    z-index: 3;
+    }
+#fig2 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    height: 50px;
+    top: 165px;
+    text-align: center;
+    padding-bottom: 10px;
+    z-index: 3;
+    }
+#fig3 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    height: 50px;
+    top: 165px;
+    text-align: center;
+    padding-bottom: 10px;
+    z-index: 3;
+    }
+#fig4 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    height: 50px;
+    top: 165px;
+    text-align: center;
+    padding-bottom: 10px;
+    z-index: 3;
+    }
+
+
+
+/* ##### FOOTER #### */
+
+/*** CONTACT FORM ***/
+
+h1{
+    font-size: 1.4em;
+    color: blue;
+}
+footer{
+    background-color: white;
+    background-image: url("/assets/images/nuuk\ sunset.jpg");
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+button{
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    margin: 500px;
+    padding: 500px;
+    font-size: 5px;
+    border-radius: 100px;
+}
+
+input{
+    margin: 5px;
+}
+p{
+    color: black;
+    font-weight: 100;
+}
+
+
+/* Når brugeren ikke udfylder */
+.error {
+    border-color: red;
+}
+.errormessage {
+    color: red;
+}
+
+.label {
+    display: block;
+    width: 100px;
+    text-align: left;
+}
+.footer img{
+    width: 20%;
+    object-fit: contain;
+    margin-bottom: 150px;
+}
+}
+
+/* Logo */
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+
+
+}
+.fa-instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}

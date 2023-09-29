@@ -1,0 +1,89 @@
+#indhold{
+    width: 1079px;
+    height: 355px;
+    background-color: white;
+    display: grid;
+
+    grid-template-columns: auto auto auto auto ;
+    grid-template-areas:"main section aside nav ";
+                        
+                    
+}
+
+#indhold p{
+    color: white;
+}
+
+
+.main{
+    grid-area: main;/*kan hedde noget andet */
+}
+
+.section{
+    grid-area: section;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+
+#indhold figure {
+    position: relative;
+    margin: 20px;
+}
+
+#indhold figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#indhold figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#fig1 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    width: 100%;
+    height: 50px;
+    top: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+#fig2 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    width: 100%;
+    height: 50px;
+    top: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+#fig3 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    width: 100%;
+    height: 50px;
+    top: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+#fig4 {
+    position: absolute;
+    background: rgba(95,147,170,0.7);
+    width: 100%;
+    height: 50px;
+    top: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    }

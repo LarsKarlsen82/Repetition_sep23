@@ -1,0 +1,13 @@
+/* ONE EXAMPLE OF A FULL PROPORTIONAL BACKGROUND. HAS SOME POSITIONING ISSUES THOUGH? */
+html{
+    scroll-behavior: smooth;
+     /* Background image hero */
+    background-image: url("/assets/images/blok\ 34\ 3.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
