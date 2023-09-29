@@ -87,3 +87,42 @@
     text-align: center;
     padding-bottom: 10px;
     }
+
+
+.product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.product img {
+    max-width: 100px; /* Set the maximum width for the images */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.animal {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.animal:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}

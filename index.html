@@ -4,9 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
-    <title>Document</title>
+    <title>Repitition</title>
+    <script src="/assets/js/element.js"></script>
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/Background.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <script src="/assets/js/script.js"defer></script>
+
 </head>
 <body>
-    
+    <a href="#" class="bubble-link">
+        <div class="bubble">Home</div>
+    </a>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- You can add more navigation links as needed -->
+    </div>
+
+<article>
+
+<section> <!-- Section 1 -->
+
+        <h2>JavaScript HTML DOM</h2>
+            <!-- Her er en overskrift med teksten "getElementById" -->
+            <h3 style="color:brown">getElementById</h3>
+
+            <!-- Her er to afsnit med id'er, som vi kan bruge til at finde dem -->
+            <p id="intro">Find HTML elementer efter Id</p>
+            <p>Dette eksempel viser <b>getElementsById</b> metoden.</p>
+
+            <!-- Her vil vi vise resultatet af vores JavaScript kode -->
+            <p id="demo"></p>
+
+        <!-- Datatype: getElementById() returnerer det første element med id'en "intro" og sætter det ind i det 
+            element med id'en "demo"  -->
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <br>
+        <br>
+
+            <h3 style="color:brown">getElementByTagName</h3>
+
+            <!-- Her er en gruppe af afsnit inde i et element med id'en "main" -->
+            <div id="main">
+                <!-- Dette afsnit er rødt -->
+                <p style='color:red'>Find HTML-elementer efter 'TagName'</p>
+                <p>Dette eksempel viser <b>getElementsByTagName</b> metoden.</p>
+                <p>Array test [2]</p> <!-- Prøv at ændre y[0] til y[2] -->
+            </div>
+
+            <!-- Her vil vi vise resultatet af vores ændringer -->
+            <p id="Resultat"></p>
+
+        <!-- Datatype: getElementsByTagName() returnerer det første '<p>'-element inde i "main" elementet, hvor teksten er ændret til 
+            blå farve ved hjælp af 'styledContentOfInnerHTML' -->
+
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <br>
+        <br>
+
+            <h3 style="color:brown">getElementsByClassName</h3>
+
+            <p class="paragraph">Dette er det første afsnit.</p>
+            <p class="paragraph">Dette er det andet afsnit.</p>
+            <p class="paragraph">Dette er det tredje afsnit.</p>
+            <p>test</p>
+
+
+        <!-- Datatype: getElementsByClassName() returnerer alle '<p>' elementer samt class="paragraph" på consollen  -->
+</section>
+
+<br>
+<br>
+
+<section> <!-- Section 2 -->
+    <h2>Besked</h2>
+    <div id="message"></div>
+
+</section>
+
+<br>
+<br>
+
+<section> <!-- Section 3 -->
+
+    <h2>produkt liste test</h2>
+    <div id="produktListe"></div>
+
+    <h2>Formular</h2>
+    <form id="formular">
+
+    <input type="text" name="navn" id="" placeholder="dit navn">
+    <input type="text" name="alder" id="" placeholder="din alder">
+    <button id="indsend-knap">Indsend</button>
+
+
+</form>
+<div id="person-liste"></div>
+
+
+</section>
+
+<br>
+<br>
+
+<section> <!-- Section 4 -->
+    <div id="animalGrid" class="animal-grid"></div>
+    <script src="/assets/js/animal.js"></script>
+
+</section>
+
+<section>
+    <h2>Eksempel med vis brugere</h2>
+    <button id="showDataButton">Vis</button>
+    <div id="opgave1"></div>
+    <script src="/assets/js/fecthUsers.js" defer></script>
+    <div id="opgave2"></div>
+</section> <!-- Section 5 -->
+
+</article>
+
+
 </body>
 </html>
+
+
+
+<script>
+    // Function to toggle the responsive navigation menu
+    function toggleNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
