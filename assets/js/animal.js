@@ -37,7 +37,7 @@ const animalDataArray = [
     {
         name: 'Koala',
         shortDescription: 'The king of the jungle',
-        image: './assets/Images/_WW236934.jpg'
+        image: './assets/Images/koala.jpg'
     },
     {
         name: 'Elephant',
