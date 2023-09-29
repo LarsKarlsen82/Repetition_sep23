@@ -123,13 +123,54 @@
 
 </section>
 
-<section>
+<section><!-- Section 5 -->
     <h2>Eksempel med vis brugere</h2>
     <button id="showDataButton">Vis</button>
     <div id="opgave1"></div>
     <script src="/assets/js/fecthUsers.js" defer></script>
     <div id="opgave2"></div>
-</section> <!-- Section 5 -->
+
+</section>
+
+<br>
+<br>
+
+<section> <!-- Section 6 -->
+    <div id="feedback-container"></div>
+    <script type="module">
+        // Importerer navngivne funktioner fra error.js
+        import { ErrorDisplay, UserFeedback } from "./assets/js/modules/error.js";
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let myUsers = ['Lars', 'Svend', 'Erik'];
+            //let usersNoErik = ['Lars', 'Svend', 'Erik', 'Karl'];
+            let usersNoErik = ['Lars', 'Svend', 'Anders', 'Karl'];
+
+            findErik(usersNoErik);
+
+            function findErik(myArray) {
+                let myErik = false;
+
+                myArray.forEach(name => {
+                    if (name === 'Erik') {
+                        myErik = true;
+                    }
+                });
+
+                const feedbackContainer = document.getElementById('feedback-container');
+
+                if (myErik) {
+                    ErrorDisplay('warning', 'Der er en Erik');
+                    UserFeedback('error', 'Jeg fandt en Erik', 'feedback-container');
+                } else {
+                    ErrorDisplay('info', 'Ingen Erik på listen');
+                    ErrorDisplay('alert', 'No erik');
+                    UserFeedback('info', 'Ingen Eriks på listen', 'feedback-container');
+                }
+            }
+        });
+    </script>
+</section>
 
 </article>
 
